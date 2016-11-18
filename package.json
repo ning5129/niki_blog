@@ -1,0 +1,32 @@
+{
+    "name": "idoc",
+    "version": "0.0.1",
+    "description": "idoc blog",
+    "keywords": [
+        "idoc",
+        "saber",
+        "edp",
+        "react",
+        "node",
+        ""
+    ],
+    "homepage": "http://JSLite.io",
+    "author": "Niki",
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "licenses": "MIT",
+    "idoc": {
+        "theme": "default",
+        "md": [
+            "index.md",
+            "saber介绍.md",
+            {
+                "edp": [
+                    "edp.md"
+                ]
+            }
+        ]
+    }
+}

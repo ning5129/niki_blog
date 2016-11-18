@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>idoc</title>
+        
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+</head>
+<body>
+<div class="navbar navbar-line">
+    <div class="container">
+        <div class="logo">
+            
+                idoc
+            
+        </div>
+        <input type="checkbox" id="idoc_nav" />
+        <div class="menu_tree">
+        <ul><li><a href="../index.html">index</a></li><li class="active"><a href="../html/saber介绍.html">saber介绍</a></li><li><a href="#"><span></span>edp</a><ul><li><a href="../html/edp/edp.html">edp</a></li></ul></li></ul>    
+        </div>
+        
+        
+
+        <section class="idoc_nav_btn">
+            <label for="idoc_nav"><span></span></label>
+        </section>
+    </div>
+    
+</div>
+
+
+
+
+<div class="container">
+
+    <div class="page-toc">
+        <ul><li><a href="#t0Saber:灵活、高效、可维护的移动 Web 解决方案">Saber:灵活、高效、可维护的移动 Web 解决方案</a><ul><li><a href="#t1为什么选择这个框架">为什么选择这个框架</a></li><li><a href="#t2安装与配置">安装与配置</a></li><li><a href="#t3生成项目结构">生成项目结构</a></li><li><a href="#t4依赖模块">依赖模块</a></li><li><a href="#t5添加模块">添加模块</a></li></ul></li><li><a href="#t6项目具体技术">项目具体技术</a><ul><li><a href="#t7前端模板：ETPL">前端模板：ETPL</a></li><li><a href="#t8前端CSS样式库：　rider">前端CSS样式库：　rider</a></li><li><a href="#t9安装与配置">安装与配置</a></li><li><a href="#t10特性">特性</a></li><li><a href="#t11数据： 从后台请求">数据： 从后台请求</a></li><li><a href="#t12移动端开发需要处理的问题??">移动端开发需要处理的问题??</a></li></ul></li></ul>
+    </div>
+    
+    <div class="content markdown-body">
+        <h1 id="t0Saber:&#x7075;&#x6D3B;&#x3001;&#x9AD8;&#x6548;&#x3001;&#x53EF;&#x7EF4;&#x62A4;&#x7684;&#x79FB;&#x52A8; Web &#x89E3;&#x51B3;&#x65B9;&#x6848;">Saber:&#x7075;&#x6D3B;&#x3001;&#x9AD8;&#x6548;&#x3001;&#x53EF;&#x7EF4;&#x62A4;&#x7684;&#x79FB;&#x52A8; Web &#x89E3;&#x51B3;&#x65B9;&#x6848; <a href="#t0Saber:&#x7075;&#x6D3B;&#x3001;&#x9AD8;&#x6548;&#x3001;&#x53EF;&#x7EF4;&#x62A4;&#x7684;&#x79FB;&#x52A8; Web &#x89E3;&#x51B3;&#x65B9;&#x6848;"> # </a></h1>
+<p>&#x8F7B;&#x677E;&#x641E;&#x5B9A;&#x4ECE; JavaScript &#x6A21;&#x5757;&#x5230; CSS &#x6837;&#x5F0F;&#x5E93;&#xFF0C;&#x4ECE;&#x5F00;&#x53D1;&#x3001;&#x8C03;&#x8BD5;&#x5230;&#x6784;&#x5EFA;&#x7684;&#x5168;&#x8FC7;&#x7A0B;</p>
+<h2 id="t1&#x4E3A;&#x4EC0;&#x4E48;&#x9009;&#x62E9;&#x8FD9;&#x4E2A;&#x6846;&#x67B6;">&#x4E3A;&#x4EC0;&#x4E48;&#x9009;&#x62E9;&#x8FD9;&#x4E2A;&#x6846;&#x67B6; <a href="#t1&#x4E3A;&#x4EC0;&#x4E48;&#x9009;&#x62E9;&#x8FD9;&#x4E2A;&#x6846;&#x67B6;"> # </a></h2>
+<p>&#x540E;&#x671F;&#x9879;&#x76EE;&#x9700;&#x6C42;&#x662F;&#x505A;&#x79FB;&#x52A8;&#x7AEF;&#x6570;&#x636E;&#x641C;&#x7D22;&#x529F;&#x80FD;&#xFF0C;&#x9488;&#x5BF9;&#x6B64;&#x9879;&#x76EE;&#xFF0C;&#x524D;&#x7AEF;&#x63A8;&#x8350;&#x7528;saber</p>
+<ol>
+<li>&#x9762;&#x5411;&#x79FB;&#x52A8;&#x573A;&#x666F;&#x8BBE;&#x8BA1;&#xFF0C;&#x63D0;&#x4F9B;&#x591A;&#x79CD;&#x6A21;&#x5757;&#x8C03;&#x7528;</li>
+<li>&#x91C7;&#x7528; ETPL &#x505A;&#x4E3A;&#x6A21;&#x677F;&#x5F15;&#x64CE;&#x3000;ETPL&#x662F;&#x5728;CMS&#x91CC;&#x5E94;&#x7528;&#x8FC7;&#x7684;&#x6A21;&#x677F;&#x5F15;&#x64CE;&#xFF0C;&#x53EF;&#x964D;&#x4F4E;&#x5B66;&#x4E60;&#x96BE;&#x5EA6;</li>
+<li>&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E; Stylus &#x7684;&#x6837;&#x5F0F;&#x5DE5;&#x5177;&#x5E93;&#xFF1A;rider&#xFF0C;&#x53EF;&#x7B80;&#x5316;&#x79FB;&#x52A8;&#x7AEF;&#x7684;&#x524D;&#x7AEF;&#x6837;&#x5F0F;&#x5F00;&#x53D1;&#x5DE5;&#x4F5C;</li>
+<li>&#x5DF2;&#x6709;&#x56E2;&#x961F;&#x5F00;&#x53D1;&#x540C;&#x7C7B;&#x529F;&#x80FD;&#xFF0C;&#x53EF;&#x501F;&#x9274;&#x7ECF;&#x9A8C;</li>
+</ol>
+<h2 id="t2&#x5B89;&#x88C5;&#x4E0E;&#x914D;&#x7F6E;">&#x5B89;&#x88C5;&#x4E0E;&#x914D;&#x7F6E; <a href="#t2&#x5B89;&#x88C5;&#x4E0E;&#x914D;&#x7F6E;"> # </a></h2>
+<p>&#x73AF;&#x5883;&#x8981;&#x6C42;&#xFF1A;node&#x3000;edp</p>
+<ul>
+<li>node&#xFF1A; &#x5B98;&#x7F51;&#x4E0B;&#x8F7D;&#x5B89;&#x88C5;</li>
+<li>edp: <code>npm install edp -g</code> </li>
+</ul>
+<h2 id="t3&#x751F;&#x6210;&#x9879;&#x76EE;&#x7ED3;&#x6784;">&#x751F;&#x6210;&#x9879;&#x76EE;&#x7ED3;&#x6784; <a href="#t3&#x751F;&#x6210;&#x9879;&#x76EE;&#x7ED3;&#x6784;"> # </a></h2>
+<p>&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;&#x5355;&#x9875;&#x9762;&#x7684;&#x79FB;&#x52A8;&#x7AEF;&#x9879;&#x76EE;</p>
+<p><code>edpm init spa</code> </p>
+<blockquote>
+<p>&#x597D;&#x5904;&#x662F;&#x5355;&#x9875;&#x9762;&#x5E94;&#x7528; &#xFF0C;&#x57FA;&#x4E8E;MVP&#x67B6;&#x6784;&#xFF0C;&#x7ED3;&#x5408;&#x9875;&#x9762;&#x8F6C;&#x573A;&#x4E0E;&#x8DEF;&#x7531;&#x7BA1;&#x7406;&#xFF0C;&#x589E;&#x52A0;&#x7528;&#x6237;&#x4F53;&#x9A8C;</p>
+</blockquote>
+<p><img src="..//img/img1.png" alt="&#x9879;&#x76EE;&#x89E3;&#x8BF4;"></p>
+<table>
+<thead>
+<tr>
+<th>folder</th>
+<th>information </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.edpprog</td>
+<td>&#x9879;&#x76EE;&#x4FE1;&#x606F;    </td>
+</tr>
+<tr>
+<td>dep</td>
+<td>&#x4F9D;&#x8D56;&#x7684;&#x5305;   </td>
+</tr>
+<tr>
+<td>doc</td>
+<td>&#x9879;&#x76EE;&#x6587;&#x6863;   </td>
+</tr>
+<tr>
+<td>node_modules&#x3000;</td>
+<td>&#x672C;&#x5730;&#x5F00;&#x53D1;&#x4F9D;&#x8D56;&#x7684;node&#x7684;&#x5305;&#x6216;&#x8005;&#x6A21;&#x5757; </td>
+</tr>
+<tr>
+<td>src</td>
+<td>&#x7CFB;&#x7EDF;&#x6E90;&#x7801;</td>
+</tr>
+<tr>
+<td>test</td>
+<td>&#x6D4B;&#x8BD5;case</td>
+</tr>
+<tr>
+<td>tool</td>
+<td>&#x672C;&#x5730;&#x5F00;&#x53D1;&#x5DE5;&#x5177;&#x5305;</td>
+</tr>
+<tr>
+<td>edp-build-config.js</td>
+<td>edp&#x9879;&#x76EE;&#x6784;&#x5EFA;&#x7684;&#x914D;&#x7F6E;&#x6A21;&#x5757;</td>
+</tr>
+<tr>
+<td>edp-rider-config.js&#x3000;</td>
+<td>edp&#x5185;&#x7F6E;rider&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td>edp-watch-config.js</td>
+<td>edp&#x76D1;&#x89C6;&#x6587;&#x4EF6;&#x6539;&#x52A8;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td>edp-webserver-config.js</td>
+<td>edp&#x542F;&#x52A8;webserver&#x914D;&#x7F6E;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td>index.html</td>
+<td>&#x9879;&#x76EE;&#x5165;&#x53E3;&#x9875;&#x9762;</td>
+</tr>
+<tr>
+<td>module.conf</td>
+<td>&#x9879;&#x76EE;&#x7684;AMD&#x6A21;&#x5757;&#x914D;&#x7F6E;</td>
+</tr>
+<tr>
+<td>package.json</td>
+<td>&#x9879;&#x76EE;&#x521D;&#x59CB;&#x5316;&#x914D;&#x7F6E;</td>
+</tr>
+<tr>
+<td>README</td>
+<td>&#x4F60;&#x60F3;&#x5728;&#x8FD9;&#x8BF4;&#x5565;&#x5C31;&#x8BF4;&#x5565;&#x5427;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="t4&#x4F9D;&#x8D56;&#x6A21;&#x5757;">&#x4F9D;&#x8D56;&#x6A21;&#x5757; <a href="#t4&#x4F9D;&#x8D56;&#x6A21;&#x5757;"> # </a></h2>
+<p><img src="..//img/img2.png" alt="&#x4F9D;&#x8D56;&#x6A21;&#x5757;"></p>
+<p>API: &#x53C2;&#x8003; <a href="http://ecomfe.github.io/saber/doc/">&#x6587;&#x6863;</a></p>
+<h2 id="t5&#x6DFB;&#x52A0;&#x6A21;&#x5757;">&#x6DFB;&#x52A0;&#x6A21;&#x5757; <a href="#t5&#x6DFB;&#x52A0;&#x6A21;&#x5757;"> # </a></h2>
+<p><code>edpm add /common/</code> </p>
+<h1 id="t6&#x9879;&#x76EE;&#x5177;&#x4F53;&#x6280;&#x672F;">&#x9879;&#x76EE;&#x5177;&#x4F53;&#x6280;&#x672F; <a href="#t6&#x9879;&#x76EE;&#x5177;&#x4F53;&#x6280;&#x672F;"> # </a></h1>
+<h2 id="t7&#x524D;&#x7AEF;&#x6A21;&#x677F;&#xFF1A;ETPL">&#x524D;&#x7AEF;&#x6A21;&#x677F;&#xFF1A;ETPL <a href="#t7&#x524D;&#x7AEF;&#x6A21;&#x677F;&#xFF1A;ETPL"> # </a></h2>
+<p><a href="https://github.com/ecomfe/etpl">ETPL</a>&#x662F;&#x4E00;&#x4E2A;&#x5F3A;&#x590D;&#x7528;&#x3001;&#x7075;&#x6D3B;&#x3001;&#x9AD8;&#x6027;&#x80FD;&#x7684;JavaScript&#x6A21;&#x677F;&#x5F15;&#x64CE;&#xFF0C;&#x9002;&#x7528;&#x4E8E;&#x6D4F;&#x89C8;&#x5668;&#x7AEF;&#x6216;Node&#x73AF;&#x5883;&#x4E2D;&#x89C6;&#x56FE;&#x7684;&#x751F;&#x6210;&#x3002;
+&#x7279;&#x70B9;:</p>
+<ul>
+<li>&#x5F3A;&#x590D;&#x7528;</li>
+<li>&#x7075;&#x6D3B;</li>
+<li>&#x9AD8;&#x6027;&#x80FD;</li>
+</ul>
+<p>API:&#x53C2;&#x8003;github</p>
+<h2 id="t8&#x524D;&#x7AEF;CSS&#x6837;&#x5F0F;&#x5E93;&#xFF1A;&#x3000;rider">&#x524D;&#x7AEF;CSS&#x6837;&#x5F0F;&#x5E93;&#xFF1A;&#x3000;rider <a href="#t8&#x524D;&#x7AEF;CSS&#x6837;&#x5F0F;&#x5E93;&#xFF1A;&#x3000;rider"> # </a></h2>
+<p>rider--&#x662F;&#x57FA;&#x4E8E; Stylus &#x4E0E;&#x540E;&#x5904;&#x7406;&#x5668;&#x3001;&#x65E0;&#x4FB5;&#x5165;&#x98CE;&#x683C;&#x7684; CSS &#x6837;&#x5F0F;&#x5DE5;&#x5177;&#x5E93;&#x3002;</p>
+<h2 id="t9&#x5B89;&#x88C5;&#x4E0E;&#x914D;&#x7F6E;">&#x5B89;&#x88C5;&#x4E0E;&#x914D;&#x7F6E; <a href="#t9&#x5B89;&#x88C5;&#x4E0E;&#x914D;&#x7F6E;"> # </a></h2>
+<ul>
+<li><code>npm install edp-provider-rider --save-dev</code></li>
+<li>edpx-mobile&#x5DF2;&#x7ECF;&#x5185;&#x7F6E;&#x4E86;edp-provider-rider</li>
+</ul>
+<h2 id="t10&#x7279;&#x6027;">&#x7279;&#x6027; <a href="#t10&#x7279;&#x6027;"> # </a></h2>
+<ol>
+<li>&#x9AD8;&#x6548;&#x5DE5;&#x4F5C;&#x6D41;&#xFF0D;&#x901A;&#x8FC7; &#x9884;&#x5904;&#x7406;&#x5668; &#x5904;&#x7406;&#x6837;&#x5F0F;&#x5C42;&#x7684;&#x62BD;&#x8C61;&#x3001;&#x590D;&#x7528;&#xFF0C;&#x51CF;&#x5C11;&#x5197;&#x4F59;&#xFF1B;&#x901A;&#x8FC7; &#x540E;&#x5904;&#x7406;&#x5668; &#x5904;&#x7406;&#x517C;&#x5BB9;&#x6027;&#x95EE;&#x9898;&#x3001;&#x4F18;&#x5316;&#x8F93;&#x51FA;&#x3002;</li>
+<li>&#x65E0;&#x4FB5;&#x5165;&#x98CE;&#x683C;&#xFF0D;&#x5728;&#x9884;&#x5904;&#x7406;&#x9636;&#x6BB5;&#xFF0C;rider &#x7684;&#x5404;&#x79CD;&#x529F;&#x80FD;&#x5747;&#x901A;&#x8FC7; Mixin, Function &#x6216; Block Mixin &#x7684;&#x65B9;&#x5F0F;&#x63D0;&#x4F9B;&#xFF0C;&#x53EA;&#x6709;&#x5728;&#x4E3B;&#x52A8;&#x8C03;&#x7528;&#x65F6;&#x624D;&#x8F93;&#x51FA;&#x4EE3;&#x7801;&#x3002;</li>
+</ol>
+<h2 id="t11&#x6570;&#x636E;&#xFF1A; &#x4ECE;&#x540E;&#x53F0;&#x8BF7;&#x6C42;">&#x6570;&#x636E;&#xFF1A; &#x4ECE;&#x540E;&#x53F0;&#x8BF7;&#x6C42; <a href="#t11&#x6570;&#x636E;&#xFF1A; &#x4ECE;&#x540E;&#x53F0;&#x8BF7;&#x6C42;"> # </a></h2>
+<blockquote>
+<p>&#x540E;&#x53F0;&#x5F00;&#x53D1;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x6A21;&#x677F;&#xFF0C;&#x53EF;&#x4EE5;&#x51CF;&#x5C11;&#x6570;&#x636E;&#x52A0;&#x8F7D;&#x7B49;&#x5F85;&#x65F6;&#x95F4;&#xFF0C;&#x51CF;&#x5C11;&#x767D;&#x5C4F;&#x65F6;&#x95F4;</p>
+</blockquote>
+<h2 id="t12&#x79FB;&#x52A8;&#x7AEF;&#x5F00;&#x53D1;&#x9700;&#x8981;&#x5904;&#x7406;&#x7684;&#x95EE;&#x9898;??">&#x79FB;&#x52A8;&#x7AEF;&#x5F00;&#x53D1;&#x9700;&#x8981;&#x5904;&#x7406;&#x7684;&#x95EE;&#x9898;?? <a href="#t12&#x79FB;&#x52A8;&#x7AEF;&#x5F00;&#x53D1;&#x9700;&#x8981;&#x5904;&#x7406;&#x7684;&#x95EE;&#x9898;??"> # </a></h2>
+<ol>
+<li>&#x73AF;&#x5883;&#x68C0;&#x6D4B;</li>
+<li>&#x6570;&#x636E;&#x52A0;&#x8F7D;&#x5F62;&#x5F0F;</li>
+<li>&#x5386;&#x53F2;&#x56DE;&#x9000;</li>
+</ol>
+
+        <div class="copyright">Powered by <a href="https://github.com/jaywcjlove/idoc" target="_blank">idoc</a>. Dependence <a href="https://nodejs.org">Node.js</a> run.</div>
+    </div>
+
+</div>
+
+
+</body>
+</html>
